@@ -52,8 +52,8 @@ tools used by technical audience in a development setting. If you're
 looking for ways to package Python for a non-technical audience and/or
 a production setting, skip ahead to :ref:`packaging-applications`.
 
-Python modules
-^^^^^^^^^^^^^^
+
+
 
 A Python file, provided it only relies on the standard library, can be
 redistributed and reused. You will also need to ensure it's written
@@ -71,8 +71,8 @@ However, this pattern won't scale for projects that consist of
 multiple files, need additional libraries, or need a specific version
 of Python, hence the options below.
 
-Python source distributions
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
 
 If your code consists of multiple Python files, it's usually organized
 into a directory structure. Any directory containing Python files can
@@ -112,8 +112,8 @@ advantages for pure-Python libraries.
    a drop-in replacement for PIL, just by changing your project's
    ``install_requires`` or ``requirements.txt``.
 
-Python binary distributions
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
 
 So much of Python's practical power comes from its ability to
 integrate with the software ecosystem, in particular libraries written
@@ -175,7 +175,7 @@ according to their dependencies on the target environment,
 so you can choose the right one for your project.
 
 Depending on a framework
-^^^^^^^^^^^^^^^^^^^^^^^^
+
 
 Some types of Python applications, like web site backends and other
 network services, are common enough that they have frameworks to
@@ -226,8 +226,8 @@ If you are *not* interested in using a framework or platform, or just
 wonder about some of the technologies and techniques utilized by the
 frameworks above, continue reading below.
 
-Depending on a pre-installed Python
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
 
 Pick an arbitrary computer, and depending on the context, there's a very
 good chance Python is already installed. Included by default in most
@@ -252,8 +252,8 @@ Technologies which support this model:
 
 .. _depending-on-a-separate-ecosystem:
 
-Depending on a separate software distribution ecosystem
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
 
 For a long time many operating systems, including Mac and Windows,
 lacked built-in package management. Only recently did these OSes gain
@@ -284,8 +284,8 @@ packages:
 
 .. _bringing-your-own-python:
 
-Bringing your own Python executable
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
 
 Computing as we know it is defined by the ability to execute
 programs. Every operating system natively supports one or more formats
@@ -315,8 +315,8 @@ server applications, see :gh:`Chef Omnibus
 <chef/omnibus#user-content--omnibus>`.
 
 
-Bringing your own userspace
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
 
 An increasing number of operating systems -- including Linux, Mac OS,
 and Windows -- can be set up to run applications packaged as
@@ -336,8 +336,8 @@ originated and where the technologies below work best:
 * `Flatpak <https://flatpak.org/>`_
 * `Snapcraft <https://snapcraft.io/>`_
 
-Bringing your own kernel
-^^^^^^^^^^^^^^^^^^^^^^^^
+
+
 
 Most operating systems support some form of classical virtualization,
 running applications packaged as images containing a full operating
@@ -352,8 +352,8 @@ this packaging. The technologies are Python agnostic, and include:
 * `VHD <https://en.wikipedia.org/wiki/VHD_(file_format)>`_, `AMI <https://en.wikipedia.org/wiki/Amazon_Machine_Image>`_, and :doc:`other formats <openstack:user/formats>`
 * `OpenStack <https://www.redhat.com/en/topics/openstack>`_ - A cloud management system in Python, with extensive VM support
 
-Bringing your own hardware
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
 
 The most all-encompassing way to ship your software would be to ship
 it already-installed on some hardware. This way, your software's user
@@ -380,8 +380,8 @@ What about...
 The sections above can only summarize so much, and you might be
 wondering about some of the more conspicuous gaps.
 
-Operating system packages
-^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
 
 As mentioned in :ref:`depending-on-a-separate-ecosystem` above, some operating
 systems have package managers of their own. If you're very sure of the
@@ -397,8 +397,8 @@ generate both deb and RPMs from the same source.
 In most deployment pipelines, the OS package manager is just one piece
 of the puzzle.
 
-virtualenv
-^^^^^^^^^^
+
+
 
 :doc:`Virtualenvs <python-guide:dev/virtualenvs>` have
 been an indispensable tool for multiple generations of Python
@@ -413,8 +413,7 @@ For production deployments, do not rely on running ``python -m pip install``
 from the Internet into a virtualenv, as one might do in a development
 environment. The overview above is full of much better solutions.
 
-Security
-^^^^^^^^
+
 
 The further down the gradient you come, the harder it gets to update
 components of your package. Everything is more tightly bound together.
